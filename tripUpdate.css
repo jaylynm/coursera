@@ -1,0 +1,62 @@
+ @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+ *{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif; 
+    text-decoration: none;
+    scroll-behavior: smooth;
+    outline: none;
+    border: none;
+    box-sizing: border-box;
+ }
+
+ :root {
+    --evergreen-color: #073d3d;
+    --moss-color: #cfddbd;
+    --sand-color: #fff;
+    --dandelion-color: #c9c316;
+}
+
+
+span.logo{
+    color: var(--dandelion-color);
+    font-size: 1.7rem;
+}
+
+.logo p {
+    font-size: 1.5rem;
+    color: var(--sand-color);
+}
+
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 2rem 9%;
+    background-color: inherit;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 0;
+}
+
+.navbar a{
+    font-size: 1.3rem;
+    color: var(--sand-color);
+    margin-left: 4rem;
+    transition: .3s;
+    
+}
+
+.navbar a:hover, .navbar a:active{
+    color: var(--moss-color);
+}
+
+.beachStock {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
