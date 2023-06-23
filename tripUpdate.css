@@ -12,16 +12,21 @@
  }
 
  :root {
-    --evergreen-color: #073d3d;
-    --moss-color: #cfddbd;
-    --sand-color: #fff;
-    --dandelion-color: #c9c316;
+    --orange-color: #f98020;
+    --pink-color: #f48676;
+    --lightblue-color: #6d9496;
+    --teal-color: #0b4251;
+    --sand-color: #fee6bb;
+    --yellow-color: #f2c864;
+    --tan-color: #eec492;
 }
 
 
 span.logo{
-    color: var(--dandelion-color);
+    color: var(--evergreen-color);
     font-size: 1.7rem;
+    align-items: left;
+    justify-content: space-between;
 }
 
 .logo p {
@@ -35,6 +40,7 @@ span.logo{
     top: 0;
     left: 0;
     width: 100%;
+    
     padding: 2rem 9%;
     background-color: inherit;
     display: flex;
@@ -52,11 +58,72 @@ span.logo{
 }
 
 .navbar a:hover, .navbar a:active{
-    color: var(--moss-color);
+    color: var(--dandelion-color);
 }
 
-.beachStock {
-    width: 100%;
-    justify-content: center;
-    align-items: center;
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(allure-of-the-seas-aerial.jpg);
+    background-position: center;
+    background-size: cover;
+    padding: 0 8%;
+    position: relative;
 }
+
+.content {
+    top: 50%;
+    position: absolute;
+    transform: translateY(-50%);
+    color: var(--sand-color);
+    
+}
+.content h1 {
+    font-size: 64px;
+    font-weight: 600;
+}
+
+.content h1 span {
+    color: var(--orange-color);
+}
+
+.content button {
+    background: transparent;
+    border: 2px solid var(--orange-color);
+    outline: none;
+    padding: 12px 25px;
+    color: var(--sand-color);
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+    cursor: pointer;
+    border-radius: 50px;
+}
+
+.content button:hover{
+    transition: .5s ease;
+    background: var(--orange-color);
+}
+
+.content button i {
+    width: 15px;
+    margin-left: 10px;
+    
+    
+}
+
+.launch-time {
+    display: flex;
+}
+
+.launch-time div {
+    flex-basis: 100px;
+}
+
+.launch-time div p {
+    font-size: 60px;
+    margin-bottom: -14px;
+}
+/* css for image slider */
+ 
